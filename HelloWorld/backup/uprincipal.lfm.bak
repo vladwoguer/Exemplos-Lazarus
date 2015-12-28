@@ -1,0 +1,52 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 251
+  Height = 240
+  Top = 116
+  Width = 320
+  Caption = 'Hello World'
+  ClientHeight = 240
+  ClientWidth = 320
+  Font.Color = clBlue
+  Font.Style = [fsUnderline]
+  OnCreate = FormCreate
+  LCLVersion = '1.4.4.0'
+  object btnHelloWorld: TButton
+    Left = 104
+    Height = 19
+    Hint = 'Exibe menssagem de Hello World'
+    Top = 124
+    Width = 117
+    Caption = 'Hello World'
+    Color = clRed
+    Font.Style = [fsBold]
+    OnClick = btnHelloWorldClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object lblHelloWorld: TLabel
+    Left = 64
+    Height = 44
+    Top = 32
+    Width = 234
+    Caption = 'Hello World no Lazarus '#13#10'Por favor clique no botão'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lblAbout: TLabel
+    Cursor = crHandPoint
+    Left = 136
+    Height = 15
+    Top = 216
+    Width = 167
+    Caption = 'Código por Vladwoguer Bezerra'
+    ParentColor = False
+    OnClick = lblAboutClick
+  end
+end

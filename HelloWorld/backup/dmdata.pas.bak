@@ -1,0 +1,30 @@
+unit dmData;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, mysql56conn, FileUtil;
+
+type
+
+  { TDataModule1 }
+
+  TDataModule1 = class(TDataModule)
+    MySQL56Connection1: TMySQL56Connection;
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{$R *.lfm}
+
+end.
+

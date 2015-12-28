@@ -1,0 +1,30 @@
+program InputValidation;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Classes
+  { you can add units after this };
+var
+  escolha : char;
+
+begin
+  writeln('Escolha entre ''A'' ou ''B''');
+  repeat
+        readln(escolha);
+  until (escolha = 'A') or (escolha = 'a') or (escolha = 'B') or (escolha = 'b'); //Precisa de uma entrada válida pra passar
+
+  case escolha of
+       'A', 'a' : begin writeln('Caminho A'); end;
+       'B', 'b' : begin writeln('Caminho B'); end;
+  end;
+
+  writeln;
+  writeln;
+  writeln('Aperte <enter> para sair.');
+  readln;
+end.
+
