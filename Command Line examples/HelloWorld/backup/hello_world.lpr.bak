@@ -12,7 +12,7 @@ uses
 begin
   WriteLn('Hello World!');
   Writeln;
-  Writeln
+  Writeln;
   Writeln('Aperte <enter> pra sair.');
   ReadLn;
 end.

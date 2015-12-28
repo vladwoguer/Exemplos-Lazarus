@@ -1,3 +1,4 @@
+// Executando a calculadora do windows Vladwoguer Bezerra Dezembro 2015
 program RunningExternalPrograms;
 
 {$mode objfpc}{$H+}

@@ -1,3 +1,4 @@
+// Jogo dos Tolos Vladwoguer Bezerra Dezembro 2015
 program ElementsPosition;
 
 {$mode objfpc}{$H+}

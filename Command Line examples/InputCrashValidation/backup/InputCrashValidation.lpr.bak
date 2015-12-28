@@ -14,8 +14,9 @@ var
   UserInput : string;
 
 begin
-  write('Entre com um número: ');
+
   repeat
+        write('Entre com um número: ');
         readln(UserInput);
         val(UserInput, numero, error);
   until error=0;

@@ -10,7 +10,7 @@ uses
   { you can add units after this };
 var
   escolha : char;
-  numero : integer;
+
 begin
   writeln('Escolha entre ''A'' ou ''B''');
   repeat

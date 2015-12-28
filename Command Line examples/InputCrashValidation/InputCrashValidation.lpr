@@ -1,3 +1,4 @@
+// Exemplo evitar crash no entrada de dados Vladwoguer Bezerra Dezembro 2015
 program InputCrashValidation;
 
 {$mode objfpc}{$H+}

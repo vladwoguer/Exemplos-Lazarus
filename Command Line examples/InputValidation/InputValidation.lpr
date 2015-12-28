@@ -1,3 +1,4 @@
+// Validação de entrada simples Vladwoguer Bezerra Dezembro 2015
 program InputValidation;
 
 {$mode objfpc}{$H+}

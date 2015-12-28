@@ -14,5 +14,7 @@ var
 begin
   script := TProcess.Create(nil);
   script.CommandLine := 'calc.exe';
+  script.execute;
+  script.Free;
 end.
 

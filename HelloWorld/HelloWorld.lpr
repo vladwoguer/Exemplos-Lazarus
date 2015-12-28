@@ -1,3 +1,4 @@
+// Hello World com GUI Vladwoguer Bezerra Dezembro 2015
 program HelloWorld;
 
 {$mode objfpc}{$H+}
