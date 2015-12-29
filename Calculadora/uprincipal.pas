@@ -5,46 +5,211 @@ unit uPrincipal;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  ExtCtrls;
 
 type
 
-  { TForm1 }
+  { TfrmPrincipal }
+  Operacoes = (ADICAO, SUBTRACAO, MULTIPLICACAO, DIVISAO, NONE);
+  TfrmPrincipal = class(TForm)
+    ButtonResultado: TButton;
+    ButtonLimpar: TButton;
+    ButtonSair: TButton;
+    editPrimeiro: TEdit;
+    editSegundo: TEdit;
+    LabelSinal: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    LabelResultado: TLabel;
+    RadioButtonAdicao: TRadioButton;
+    RadioButtonSubtracao: TRadioButton;
+    RadioButtonMultiplicacao: TRadioButton;
+    RadioButtonDivisao: TRadioButton;
+    RadioGroupOperacao: TRadioGroup;
 
-  TForm1 = class(TForm)
-    Button1: TButton;
-    procedure Button1Click(Sender: TObject);
-    procedure FormClick(Sender: TObject);
-    procedure FormDblClick(Sender: TObject);
+    procedure ButtonLimparClick(Sender: TObject);
+    procedure ButtonResultadoClick(Sender: TObject);
+    procedure ButtonSairClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure RadioButtonAdicaoChange(Sender: TObject);
+    procedure RadioButtonDivisaoChange(Sender: TObject);
+    procedure RadioButtonMultiplicacaoChange(Sender: TObject);
+    procedure RadioButtonSubtracaoChange(Sender: TObject);
+
   private
     { private declarations }
+    operacao : Operacoes;
   public
     { public declarations }
+    procedure setOperacao(op : Operacoes);
+    function getOperacao() : Operacoes;
+    procedure atualizaSinal;
   end;
 
 var
-  Form1: TForm1;
+  frmPrincipal: TfrmPrincipal;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TfrmPrincipal }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfrmPrincipal.atualizaSinal;
+
 begin
-  ShowMessage('Click');
+  if(RadioButtonAdicao.Checked = True)then
+  begin
+     setOperacao(ADICAO);
+  end
+  else
+  if(RadioButtonSubtracao.Checked = True)then
+  begin
+     setOperacao(SUBTRACAO);
+  end
+  else
+  if(RadioButtonMultiplicacao.Checked = True)then
+  begin
+     setOperacao(MULTIPLICACAO);
+  end
+  else
+  if(RadioButtonDivisao.Checked = True)then
+  begin
+     setOperacao(DIVISAO);
+  end
+  else
+  begin
+    setOperacao(NONE);
+  end;
+
+
+  case operacao of
+  ADICAO:
+         begin
+              LabelSinal.Caption := '+';
+         end;
+
+  SUBTRACAO:
+         begin
+              LabelSinal.Caption := '-';
+         end;
+
+  MULTIPLICACAO:
+        begin
+             LabelSinal.Caption := '*';
+        end;
+   DIVISAO:
+        begin
+             LabelSinal.Caption := '/';
+        end;
+  end;
 end;
 
-procedure TForm1.FormClick(Sender: TObject);
+procedure  TfrmPrincipal.setOperacao(op : Operacoes);
 begin
-  //ShowMessage('Click');
+  self.operacao := op;
 end;
 
-procedure TForm1.FormDblClick(Sender: TObject);
+function TfrmPrincipal.getOperacao() : Operacoes;
 begin
-  ShowMessage('Double Click');
+  getOperacao := self.operacao;
 end;
+
+procedure TfrmPrincipal.ButtonResultadoClick(Sender: TObject);
+var
+   a: real;
+   b: real;
+   resultado: real;
+begin
+     atualizaSinal;
+     try
+     a := StrToFloat(editPrimeiro.Text);
+     b := StrToFloat(editSegundo.Text);
+      case operacao of
+     ADICAO:
+     begin
+          resultado := a + b;
+          LabelResultado.Caption := FloatToStr(resultado);
+     end;
+     SUBTRACAO:
+     begin
+          resultado := a - b;
+          LabelResultado.Caption := FloatToStr(resultado);
+     end;
+     MULTIPLICACAO:
+     begin
+          resultado := a * b;
+          LabelResultado.Caption := FloatToStr(resultado);
+     end;
+     DIVISAO:
+     begin
+          resultado := a / b;
+          LabelResultado.Caption := FloatToStr(resultado);
+     end;
+     else
+     begin
+          ShowMessage('Por favor selecione uma operação!');
+          LabelResultado.Caption := '';
+
+     end;
+
+     end;
+
+     except
+       ShowMessage('Por favor forneça dados válidos!');
+     end;
+
+
+
+end;
+
+procedure TfrmPrincipal.ButtonSairClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TfrmPrincipal.ButtonLimparClick(Sender: TObject);
+begin
+  editPrimeiro.Clear;
+  editSegundo.Clear;
+  LabelSinal.Caption:='';
+  LabelResultado.Caption:='';
+  editPrimeiro.SetFocus;
+
+end;
+
+procedure TfrmPrincipal.FormCreate(Sender: TObject);
+begin
+      operacao := NONE;
+end;
+
+procedure TfrmPrincipal.RadioButtonAdicaoChange(Sender: TObject);
+begin
+  atualizaSinal;
+end;
+
+procedure TfrmPrincipal.RadioButtonDivisaoChange(Sender: TObject);
+begin
+  atualizaSinal;
+end;
+
+procedure TfrmPrincipal.RadioButtonMultiplicacaoChange(Sender: TObject);
+begin
+  atualizaSinal;
+end;
+
+procedure TfrmPrincipal.RadioButtonSubtracaoChange(Sender: TObject);
+begin
+  atualizaSinal;
+end;
+
+
+
+
+
+
+
 
 end.
 
