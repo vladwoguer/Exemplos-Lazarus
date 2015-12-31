@@ -1,0 +1,190 @@
+object Form1: TForm1
+  Left = 321
+  Height = 400
+  Top = 140
+  Width = 400
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Coloque o quadrado preto dentro do azul'
+  ClientHeight = 400
+  ClientWidth = 400
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  LCLVersion = '1.4.4.0'
+  object ShapeAtor: TShape
+    Left = 8
+    Height = 65
+    Top = 328
+    Width = 65
+    Brush.Color = clMenuHighlight
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 64
+    Top = 0
+    Width = 400
+    Align = alTop
+    ClientHeight = 44
+    ClientWidth = 396
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Height = 15
+      Top = 0
+      Width = 64
+      Caption = 'Velocidade: '
+      ParentColor = False
+      OnClick = Label1Click
+    end
+    object UpDown1: TUpDown
+      Left = 105
+      Height = 32
+      Top = -8
+      Width = 17
+      Associate = Edit1
+      Max = 5
+      Min = 1
+      OnClick = UpDown1Click
+      Position = 1
+      TabOrder = 0
+      Wrap = False
+    end
+    object Edit1: TEdit
+      Left = 80
+      Height = 32
+      Top = -8
+      Width = 25
+      Enabled = False
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -21
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabStop = False
+      TabOrder = 2
+    end
+    object Label2: TLabel
+      Left = 144
+      Height = 15
+      Top = 0
+      Width = 40
+      Caption = 'Pontos:'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 15
+      Height = 15
+      Top = 24
+      Width = 22
+      Caption = 'Life:'
+      ParentColor = False
+    end
+    object ProgressBar1: TProgressBar
+      Left = 48
+      Height = 20
+      Top = 24
+      Width = 144
+      Position = 100
+      Step = 1
+      TabOrder = 1
+    end
+  end
+  object Edit2: TEdit
+    Left = 192
+    Height = 32
+    Top = 8
+    Width = 200
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabStop = False
+    TabOrder = 1
+  end
+  object ShapePontos1: TShape
+    Left = 160
+    Height = 40
+    Top = 136
+    Width = 40
+    Brush.Color = clBtnText
+  end
+  object ShapePontos2: TShape
+    Left = 160
+    Height = 40
+    Top = 264
+    Width = 40
+    Brush.Color = clBtnText
+  end
+  object ShapeInimigo3: TShape
+    Left = 320
+    Height = 30
+    Top = 80
+    Width = 30
+    Brush.Color = clRed
+  end
+  object ShapeInimigo1: TShape
+    Left = 16
+    Height = 30
+    Top = 80
+    Width = 30
+    Brush.Color = clRed
+  end
+  object ShapeInimigo5: TShape
+    Left = 168
+    Height = 30
+    Top = 200
+    Width = 30
+    Brush.Color = clRed
+  end
+  object ShapeInimigo8: TShape
+    Left = 320
+    Height = 30
+    Top = 336
+    Width = 30
+    Brush.Color = clRed
+  end
+  object ShapeInimigo2: TShape
+    Left = 168
+    Height = 30
+    Top = 80
+    Width = 30
+    Brush.Color = clRed
+  end
+  object ShapeInimigo4: TShape
+    Left = 16
+    Height = 30
+    Top = 200
+    Width = 30
+    Brush.Color = clRed
+  end
+  object ShapeInimigo6: TShape
+    Left = 320
+    Height = 30
+    Top = 200
+    Width = 30
+    Brush.Color = clRed
+  end
+  object ShapeInimigo7: TShape
+    Left = 168
+    Height = 30
+    Top = 336
+    Width = 30
+    Brush.Color = clRed
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    left = 352
+    top = 24
+  end
+  object Timer2: TTimer
+    Interval = 1
+    OnTimer = Timer2Timer
+    left = 310
+    top = 39
+  end
+end

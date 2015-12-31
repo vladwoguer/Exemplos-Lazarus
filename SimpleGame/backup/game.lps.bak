@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="game.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPrincipal"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="100"/>
+        <CursorPos X="48" Y="182"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="6" HistoryIndex="5">
+      <Position1>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="52" TopLine="46"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="167" Column="48" TopLine="155"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="165" Column="9" TopLine="177"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="157" Column="82" TopLine="149"/>
+      </Position4>
+      <Position5>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="159" Column="53" TopLine="149"/>
+      </Position5>
+      <Position6>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="160" Column="53" TopLine="150"/>
+      </Position6>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
