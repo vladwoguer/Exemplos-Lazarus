@@ -1,0 +1,59 @@
+object FormPrincipal: TFormPrincipal
+  Left = 328
+  Height = 240
+  Top = 140
+  Width = 576
+  Caption = 'Exemplo de SqLite3 no Lazarus'
+  ClientHeight = 240
+  ClientWidth = 576
+  OnCreate = FormCreate
+  LCLVersion = '1.4.4.0'
+  object DBGridTabelaDatos: TDBGrid
+    Left = 8
+    Height = 100
+    Top = 0
+    Width = 553
+    Color = clWindow
+    Columns = <>
+    TabOrder = 0
+  end
+  object LabelConectado: TLabel
+    Left = 25
+    Height = 15
+    Top = 118
+    Width = 64
+    Caption = 'Conectado: '
+    ParentColor = False
+  end
+  object ShapeConectado: TShape
+    Left = 96
+    Height = 15
+    Top = 118
+    Width = 15
+    Shape = stCircle
+  end
+  object SQLite3Connection: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    LogEvents = []
+    Options = []
+    left = 56
+    top = 176
+  end
+  object SQLQueryTabelaDatos: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    left = 424
+    top = 176
+  end
+  object SQLTransaction: TSQLTransaction
+    Active = False
+    left = 168
+    top = 176
+  end
+  object DataSourceTabelaDatos: TDataSource
+    left = 288
+    top = 176
+  end
+end
