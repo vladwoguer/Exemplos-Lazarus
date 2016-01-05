@@ -1,0 +1,56 @@
+object FormVisualizadorXML: TFormVisualizadorXML
+  Left = 365
+  Height = 524
+  Top = 145
+  Width = 500
+  Caption = 'Visualizador de XML'
+  ClientHeight = 524
+  ClientWidth = 500
+  LCLVersion = '1.4.4.0'
+  object LabelNomeArquivo: TLabel
+    Left = 11
+    Height = 15
+    Top = 11
+    Width = 98
+    Caption = 'Nome do Arquivo:'
+    ParentColor = False
+  end
+  object EditNomeDoArquivo: TEdit
+    Left = 11
+    Height = 23
+    Top = 32
+    Width = 413
+    TabOrder = 0
+  end
+  object ButtonAbrir: TButton
+    Left = 424
+    Height = 25
+    Top = 30
+    Width = 75
+    Caption = 'Abrir'
+    OnClick = ButtonAbrirClick
+    TabOrder = 1
+  end
+  object ButtonLer: TButton
+    Left = 424
+    Height = 25
+    Top = 56
+    Width = 75
+    Caption = 'Ler'
+    Enabled = False
+    OnClick = ButtonLerClick
+    TabOrder = 2
+  end
+  object TreeViewXML: TTreeView
+    Left = 0
+    Height = 433
+    Top = 88
+    Width = 501
+    DefaultItemHeight = 18
+    TabOrder = 3
+  end
+  object OpenDialogAbrirXML: TOpenDialog
+    left = 400
+    top = 448
+  end
+end

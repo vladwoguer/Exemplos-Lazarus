@@ -1,0 +1,51 @@
+unit uPrincipal;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { private declarations }
+     ButtonDinamico: TButton;
+  public
+    { public declarations }
+    procedure cliqueDinamico(Sender: TObject);
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.cliqueDinamico(Sender: TObject);
+begin
+    ShowMessage(Concat('Eu sou o Botao',TButton (Sender).Name));
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  ButtonDinamico := TButton.Create(nil);
+  ButtonDinamico.Parent:= Form1;
+  ButtonDinamico.Name:= 'ButtonDinamico';
+  ButtonDinamico.Caption:= 'Dinâmico';
+  ButtonDinamico.OnClick:= @cliqueDinamico;
+
+
+end;
+
+end.
+
