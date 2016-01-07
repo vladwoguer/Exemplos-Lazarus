@@ -1,0 +1,127 @@
+object Form1: TForm1
+  Left = 381
+  Height = 470
+  Top = 135
+  Width = 436
+  BorderStyle = bsDialog
+  Caption = 'Exemplo com TList'
+  ClientHeight = 470
+  ClientWidth = 436
+  OnCreate = FormCreate
+  LCLVersion = '1.4.4.0'
+  object LabelNome: TLabel
+    Left = 72
+    Height = 15
+    Top = 32
+    Width = 36
+    Caption = 'Nome:'
+    ParentColor = False
+  end
+  object EditNome: TEdit
+    Left = 144
+    Height = 23
+    Top = 24
+    Width = 168
+    TabOrder = 0
+  end
+  object EditTelefone: TEdit
+    Left = 144
+    Height = 23
+    Top = 64
+    Width = 168
+    TabOrder = 1
+  end
+  object LabelTelefone: TLabel
+    Left = 72
+    Height = 15
+    Top = 64
+    Width = 49
+    Caption = 'Telefone:'
+    ParentColor = False
+  end
+  object ButtonAdicionar: TButton
+    Left = 200
+    Height = 25
+    Top = 96
+    Width = 112
+    Caption = 'Adicionar a lista'
+    OnClick = ButtonAdicionarClick
+    TabOrder = 2
+  end
+  object ButtonProximo: TButton
+    Left = 328
+    Height = 81
+    Top = 256
+    Width = 75
+    Caption = 'Proximo'
+    Enabled = False
+    OnClick = ButtonProximoClick
+    TabOrder = 3
+  end
+  object LabelRegistros: TLabel
+    Left = 21
+    Height = 15
+    Top = 200
+    Width = 100
+    Caption = 'Visualizar registros:'
+    ParentColor = False
+  end
+  object ButtonAnterior: TButton
+    Left = 8
+    Height = 81
+    Top = 256
+    Width = 75
+    Caption = 'Anterior'
+    Enabled = False
+    OnClick = ButtonAnteriorClick
+    TabOrder = 4
+  end
+  object LabelNome1: TLabel
+    Left = 96
+    Height = 15
+    Top = 264
+    Width = 36
+    Caption = 'Nome:'
+    ParentColor = False
+  end
+  object EditNomeVisualizacao: TEdit
+    Left = 152
+    Height = 23
+    Top = 264
+    Width = 160
+    Enabled = False
+    TabOrder = 5
+  end
+  object EditTelefoneVisualizacao: TEdit
+    Left = 152
+    Height = 23
+    Top = 304
+    Width = 160
+    Enabled = False
+    TabOrder = 6
+  end
+  object LabelTelefone1: TLabel
+    Left = 96
+    Height = 15
+    Top = 304
+    Width = 49
+    Caption = 'Telefone:'
+    ParentColor = False
+  end
+  object LabelContagem: TLabel
+    Left = 24
+    Height = 15
+    Top = 224
+    Width = 49
+    Caption = 'Registro: '
+    ParentColor = False
+  end
+  object LabelRegistro: TLabel
+    Left = 80
+    Height = 15
+    Top = 224
+    Width = 17
+    Caption = '0/0'
+    ParentColor = False
+  end
+end
