@@ -8,7 +8,7 @@ object FormPrincipal: TFormPrincipal
   ClientWidth = 576
   OnCreate = FormCreate
   LCLVersion = '1.4.4.0'
-  object DBGrid1: TDBGrid
+  object DBGridTabelaDatos: TDBGrid
     Left = 8
     Height = 100
     Top = 0
@@ -16,6 +16,21 @@ object FormPrincipal: TFormPrincipal
     Color = clWindow
     Columns = <>
     TabOrder = 0
+  end
+  object LabelConectado: TLabel
+    Left = 25
+    Height = 15
+    Top = 118
+    Width = 64
+    Caption = 'Conectado: '
+    ParentColor = False
+  end
+  object ShapeConectado: TShape
+    Left = 96
+    Height = 15
+    Top = 118
+    Width = 15
+    Shape = stCircle
   end
   object SQLite3Connection: TSQLite3Connection
     Connected = False

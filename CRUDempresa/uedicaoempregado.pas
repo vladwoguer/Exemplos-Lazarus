@@ -1,3 +1,4 @@
+//Exemplo Vladwoguer Bezerra Dezembro 2015
 unit uEdicaoEmpregado;
 
 {$mode objfpc}{$H+}

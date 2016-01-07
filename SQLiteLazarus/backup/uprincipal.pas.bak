@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, sqlite3conn, sqldb, db, FileUtil, Forms, Controls,
-  Graphics, Dialogs, DBGrids;
+  Graphics, Dialogs, DBGrids, StdCtrls, ExtCtrls;
 
 type
 
@@ -14,7 +14,9 @@ type
 
   TFormPrincipal = class(TForm)
     DataSourceTabelaDatos: TDataSource;
-    DBGrid1: TDBGrid;
+    DBGridTabelaDatos: TDBGrid;
+    LabelConectado: TLabel;
+    ShapeConectado: TShape;
     SQLite3Connection: TSQLite3Connection;
     SQLQueryTabelaDatos: TSQLQuery;
     SQLTransaction: TSQLTransaction;
@@ -38,14 +40,21 @@ procedure TFormPrincipal.FormCreate(Sender: TObject);
 begin
 
   SQLite3Connection.DatabaseName:='datos.db';
-  SQLite3Connection.Connected:=True;
+  try
+     SQLite3Connection.Connected:=True;
+     ShapeConectado.Brush.Color:= clGreen;
+
+  except
+    ShowMessage('Não foi possível acessar o banco de dados');
+  end;
   SQLTransaction.DataBase:= SQLite3Connection;
   SQLQueryTabelaDatos.DataBase:= SQLite3Connection;
   SQLQueryTabelaDatos.SQL.Text:= 'Select * FROM datos ';
   SQLQueryTabelaDatos.Open;
   DataSourceTabelaDatos.DataSet:= SQLQueryTabelaDatos;
-  DBGrid1.DataSource:= DataSourceTabelaDatos;
-  DBGrid1.AutoFillColumns:=True;
+  DBGridTabelaDatos.DataSource:= DataSourceTabelaDatos;
+  DBGridTabelaDatos.AutoFillColumns:=True;
+
 end;
 
 end.

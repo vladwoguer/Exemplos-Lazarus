@@ -1,3 +1,4 @@
+// Exemplo Hello World Lazarus Vladwoguer Bezerra Dezembro 2015
 program hello_world;
 
 {$mode objfpc}{$H+}

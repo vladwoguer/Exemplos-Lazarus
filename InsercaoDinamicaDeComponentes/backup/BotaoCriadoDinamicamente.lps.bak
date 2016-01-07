@@ -17,12 +17,12 @@
       <Unit1>
         <Filename Value="uprincipal.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="FormPrincipal"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipal"/>
         <IsVisibleTab Value="True"/>
         <TopLine Value="32"/>
-        <CursorPos X="30" Y="37"/>
+        <CursorPos X="43" Y="45"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>

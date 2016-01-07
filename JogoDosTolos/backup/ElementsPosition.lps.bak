@@ -4,11 +4,10 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="5">
+    <Units Count="6">
       <Unit0>
         <Filename Value="ElementsPosition.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <CursorPos X="51"/>
         <UsageCount Value="20"/>
@@ -28,7 +27,7 @@
       </Unit1>
       <Unit2>
         <Filename Value="C:\lazarus\lcl\include\control.inc"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="22"/>
         <CursorPos Y="3667"/>
         <UsageCount Value="10"/>
@@ -36,7 +35,7 @@
       </Unit2>
       <Unit3>
         <Filename Value="C:\lazarus\lcl\include\wincontrol.inc"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="7958"/>
         <CursorPos Y="7967"/>
         <UsageCount Value="10"/>
@@ -45,12 +44,20 @@
       <Unit4>
         <Filename Value="C:\lazarus\lcl\lclproc.pas"/>
         <UnitName Value="LCLProc"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="1155"/>
         <CursorPos Y="1170"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit4>
+      <Unit5>
+        <Filename Value="..\SimpleGame\uprincipal.pas"/>
+        <UnitName Value="uPrincipal"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>

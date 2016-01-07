@@ -46,9 +46,7 @@ end;
 
 procedure TfrmPrincipal.lblAboutClick(Sender: TObject);
 begin
-
-
-  //ShellExecute(0, 'OPEN', PChar('"http:\\github.com\vladwoguer"'), '', '', 1);
+   OpenURL('http:\\github.com\vladwoguer');
 end;
 
 procedure TfrmPrincipal.btnHelloWorldClick(Sender: TObject);

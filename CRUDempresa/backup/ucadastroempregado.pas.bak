@@ -10,9 +10,9 @@ uses
 
 type
 
-  { TForm1 }
+  { TFormCriacaoEmpregado }
 
-  TForm1 = class(TForm)
+  TFormCriacaoEmpregado = class(TForm)
     ButtonOK: TButton;
     ButtonCancelar: TButton;
     ComboBoxDepartamento: TComboBox;
@@ -34,15 +34,15 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FormCriacaoEmpregado: TFormCriacaoEmpregado;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TFormCriacaoEmpregado }
 
-procedure TForm1.InserirEmpregado(nome: String; cd_departamento: Integer);
+procedure TFormCriacaoEmpregado.InserirEmpregado(nome: String; cd_departamento: Integer);
 begin
     SQLQuery.SQL.Text:= 'INSERT INTO empregado(nome,departamento) values ('+''''+nome+''''+','+IntToStr(cd_departamento)+')';
     SQLTransaction.Active:= False;
@@ -51,9 +51,9 @@ begin
     SQLTransaction.Commit;
 end;
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure TFormCriacaoEmpregado.FormCreate(Sender: TObject);
 begin
-  Form1.Caption:= 'Cadastro Funcionario';
+  FormCriacaoEmpregado.Caption:= 'Cadastro Funcionario';
   SQLite3Connection.DatabaseName:='banco.db';
   SQLite3Connection.Connected:=True;
   SQLTransaction.DataBase:= SQLite3Connection;
@@ -61,18 +61,18 @@ begin
   SQLQuery.Transaction:= SQLTransaction;
 end;
 
-procedure TForm1.ButtonCancelarClick(Sender: TObject);
+procedure TFormCriacaoEmpregado.ButtonCancelarClick(Sender: TObject);
 begin
-  Form1.Close;
+  FormCriacaoEmpregado.Close;
 end;
 
-procedure TForm1.ButtonOKClick(Sender: TObject);
+procedure TFormCriacaoEmpregado.ButtonOKClick(Sender: TObject);
 begin
   InserirEmpregado(EditNome.Text, Integer(ComboBoxDepartamento.Items.Objects[ComboBoxDepartamento.ItemIndex]));
-  Form1.Close;
+  FormCriacaoEmpregado.Close;
 end;
 
-procedure TForm1.FormShow(Sender: TObject);
+procedure TFormCriacaoEmpregado.FormShow(Sender: TObject);
 begin
     ComboBoxDepartamento.Clear;
     SQLQuery.SQL.Text:= 'SELECT id,nome FROM departamento';

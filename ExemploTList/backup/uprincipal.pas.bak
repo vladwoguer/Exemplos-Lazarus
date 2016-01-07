@@ -77,7 +77,7 @@ implementation
     else begin
         ButtonProximo.Enabled:= True;
     end;
-   // LabelRegistro.Caption:= IntToStr(indice+1) + '/' + IntToStr(total);
+    LabelRegistro.Caption:= IntToStr(indice+1) + '/' + IntToStr(total);
  end;
 
 procedure TForm1.ButtonAnteriorClick(Sender: TObject);

@@ -61,7 +61,8 @@ object Form1: TForm1
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
       ParentFont = False
-      TabOrder = 1
+      TabStop = False
+      TabOrder = 2
     end
     object Label2: TLabel
       Left = 144
@@ -86,7 +87,7 @@ object Form1: TForm1
       Width = 144
       Position = 100
       Step = 1
-      TabOrder = 2
+      TabOrder = 1
     end
   end
   object Edit2: TEdit
@@ -101,6 +102,7 @@ object Form1: TForm1
     Font.Pitch = fpVariable
     Font.Quality = fqDraft
     ParentFont = False
+    TabStop = False
     TabOrder = 1
   end
   object ShapePontos1: TShape

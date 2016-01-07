@@ -1,19 +1,19 @@
-object Form1: TForm1
+object FormPrincipal: TFormPrincipal
   Left = 328
   Height = 240
   Top = 140
   Width = 320
-  Caption = 'Form1'
+  Caption = 'Botão que cria outro botão'
   ClientHeight = 240
   ClientWidth = 320
   LCLVersion = '1.4.4.0'
-  object Button1: TButton
-    Left = 72
+  object ButtonCriar: TButton
+    Left = 112
     Height = 25
-    Top = 69
-    Width = 75
-    Caption = 'Button1'
-    OnClick = Button1Click
+    Top = 104
+    Width = 112
+    Caption = 'Adicionar Botão'
+    OnClick = ButtonCriarClick
     TabOrder = 0
   end
 end

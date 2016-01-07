@@ -8,11 +8,11 @@
       <Unit0>
         <Filename Value="HelloWorld.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="20" Y="10"/>
         <UsageCount Value="22"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="uprincipal.pas"/>
@@ -21,7 +21,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipal"/>
-        <IsVisibleTab Value="True"/>
         <CursorPos X="22" Y="5"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
@@ -41,13 +40,13 @@
       </Unit2>
       <Unit3>
         <Filename Value="C:\lazarus\lcl\include\control.inc"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <CursorPos Y="2736"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit3>
     </Units>
-    <JumpHistory Count="20" HistoryIndex="19">
+    <JumpHistory Count="21" HistoryIndex="20">
       <Position1>
         <Filename Value="uprincipal.pas"/>
         <Caret Line="33" Column="35" TopLine="20"/>
@@ -128,6 +127,9 @@
         <Filename Value="uprincipal.pas"/>
         <Caret Line="50" Column="18" TopLine="40"/>
       </Position20>
+      <Position21>
+        <Filename Value="HelloWorld.lpr"/>
+      </Position21>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

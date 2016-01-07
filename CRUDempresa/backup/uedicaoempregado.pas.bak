@@ -49,6 +49,7 @@ begin
     SQLTransaction.StartTransaction;
     SQLQuery.ExecSQL;
     SQLTransaction.Commit;
+    Close;
 end;
 
 procedure TFormEdicaoEmpregado.ButtonCancelarClick(Sender: TObject);

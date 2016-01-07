@@ -1,3 +1,4 @@
+// Calculadora Simples Vladwoguer Bezerra Dezembro de 2015
 unit uPrincipal;
 
 {$mode objfpc}{$H+}

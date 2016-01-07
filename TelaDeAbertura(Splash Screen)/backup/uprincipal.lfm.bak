@@ -42,6 +42,7 @@ object FormPrincipal: TFormPrincipal
   object ButtonEntrar: TButton
     Left = 240
     Height = 66
+    Hint = 'Login Fake'#13#10'Apenas para mostrar'
     Top = 70
     Width = 75
     Caption = 'Entrar'

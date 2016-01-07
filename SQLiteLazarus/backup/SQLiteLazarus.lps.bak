@@ -12,23 +12,28 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit0>
       <Unit1>
         <Filename Value="uprincipal.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="FormPrincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipal"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="31"/>
-        <CursorPos X="44" Y="46"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="35"/>
+        <CursorPos X="2" Y="39"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="46" Column="44" TopLine="31"/>
+      </Position1>
+    </JumpHistory>
   </ProjectSession>
 </CONFIG>

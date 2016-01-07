@@ -115,7 +115,7 @@ end;
 
 procedure TFormPrincipal.ButtonNovoClick(Sender: TObject);
 begin
-  uCadastroEmpregado.Form1.ShowModal;
+  uCadastroEmpregado.FormCriacaoEmpregado.ShowModal;
   RefreshEmpregados;
 end;
 

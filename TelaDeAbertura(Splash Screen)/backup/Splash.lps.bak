@@ -4,14 +4,13 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="3">
+    <Units Count="4">
       <Unit0>
         <Filename Value="Splash.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="11"/>
-        <CursorPos X="13" Y="22"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="45"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -19,8 +18,10 @@
         <Filename Value="uprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormPrincipal"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipal"/>
+        <CursorPos X="45"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -29,13 +30,23 @@
         <Filename Value="usplash.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormSplash"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uSplash"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="45"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="..\VisualizadorDeXML\uprincipal.pas"/>
+        <UnitName Value="uPrincipal"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="45"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
     </Units>
     <JumpHistory Count="2" HistoryIndex="1">
       <Position1>

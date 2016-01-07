@@ -56,7 +56,7 @@ begin
   // Inclui atributos, se existirem
   for I := 0 to noDoDOM.Attributes.Length - 1 do begin
     noAtributo := noDoDOM.Attributes.Item[I];
-    TreeViewXML.Items.AddChild(NewTreeNode,
+    TreeViewXML.Items.AddChild(novoTreeNode,
       '[' + noAtributo.NodeName + ' = "' + noAtributo.NodeValue + '"]');// Adiciona atributos como filhos
   end;
   // Inclui cada nó filho
