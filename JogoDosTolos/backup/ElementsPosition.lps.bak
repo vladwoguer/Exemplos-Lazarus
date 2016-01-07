@@ -8,6 +8,7 @@
       <Unit0>
         <Filename Value="ElementsPosition.lpr"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <CursorPos X="51"/>
         <UsageCount Value="20"/>
@@ -20,8 +21,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipal"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="63"/>
         <CursorPos X="3" Y="70"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
